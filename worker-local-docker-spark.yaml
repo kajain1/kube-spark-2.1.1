@@ -1,0 +1,8 @@
+spark-worker:
+  image: spark-2.1.1
+  command: "/start-worker-home.sh"
+  expose:
+    - 7012
+    - 8881
+  ports:
+    - 8081:8081
